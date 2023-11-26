@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.thisisujjawal.springsecurityexample.model.MyUser;
 import com.thisisujjawal.springsecurityexample.repo.MyUserRepo;
@@ -16,6 +17,7 @@ import com.thisisujjawal.springsecurityexample.security.MyUserDetails;
  * @author ujjawal
  *
  */
+@Service
 public class MyUserDetailsService implements UserDetailsService {
 	
 

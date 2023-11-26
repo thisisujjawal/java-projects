@@ -18,7 +18,7 @@ public class controller {
 		return "Hello admin";
 	}
 	
-	@GetMapping("/user")
+	@GetMapping("/users")
 	@PreAuthorize("hasAuthority('ROLE_USER')")
 	public String user() {
 		return "Hello user";
